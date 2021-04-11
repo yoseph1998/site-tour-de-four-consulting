@@ -1,0 +1,63 @@
+header {
+    --nav-height: 90px;
+    height: var(--nav-height);
+}
+/*****************/
+/* STICKY RETURN */
+/*****************/
+header .sticky-return {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+    width: 40px;
+    height: 40px;
+    z-index: 10;
+}
+
+header .sticky-return img {
+    object-fit: contain;
+    width: 40px;
+    height: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+/*********************/
+/* STICKY NAVIGATION */
+/*********************/
+header .sticky-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    height: var(--nav-height);
+    width: 100%;
+    background-color: #9c2828;
+}
+header .sticky-nav {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+header .sticky-nav .nav-item {
+    text-align: center;
+    fill:black;
+    color:black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header .sticky-nav .nav-item svg {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
