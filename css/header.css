@@ -1,7 +1,81 @@
 header {
-    --nav-height: 90px;
-    height: var(--nav-height);
+    --nav-height: 80px;
+    --nav-height-expanded: 120px;
+    --nav-background: #711717eb;
+    --nav-item-filter: invert(93%) sepia(35%) saturate(801%) hue-rotate(292deg) brightness(103%) contrast(101%); 
+    --nav-item-filter-hover: invert(81%) sepia(12%) saturate(719%) hue-rotate(204deg) brightness(93%) contrast(91%);;
+
+    height: var(--nav-height-expanded);
 }
+
+/*********************/
+/* STICKY NAVIGATION */
+/*********************/
+header .sticky-nav-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 10px 0;
+    height: var(--nav-height);
+    width: 100%;
+    background-color: var(--nav-background);
+    transition: ease 0.5s;
+}
+
+header .sticky-nav-container:hover {
+    --nav-height: var(--nav-height-expanded);
+}
+
+header .sticky-nav {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+}
+
+header .sticky-nav a {
+    text-align: center;
+    filter:var(--nav-item-filter);
+    color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Krub', serif;
+    font-weight: 600;
+}
+
+header .sticky-nav a:hover {
+    filter: var(--nav-item-filter-hover);
+}
+
+header .sticky-nav-container .sticky-nav a span { 
+    visibility: hidden;
+}
+
+header .sticky-nav-container:hover .sticky-nav a span { 
+    visibility:visible;
+}
+
+header .sticky-nav a img {
+    min-width: 40px;
+    min-height: 40px;
+    max-width: 40px;
+    max-height: 40px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+@media (max-width: 1000px) {
+
+}
+
 /*****************/
 /* STICKY RETURN */
 /*****************/
@@ -20,44 +94,5 @@ header .sticky-return img {
     height: 40px;
     width: 100%;
     height: 100%;
-}
-
-/*********************/
-/* STICKY NAVIGATION */
-/*********************/
-header .sticky-nav-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    height: var(--nav-height);
-    width: 100%;
-    background-color: #9c2828;
-}
-header .sticky-nav {
-    margin: auto;
-    width: 100%;
-    height: 100%;
-    max-width: 1300px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: space-evenly;
-}
-
-header .sticky-nav .nav-item {
-    text-align: center;
-    fill:black;
-    color:black;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-header .sticky-nav .nav-item svg {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
+    
 }

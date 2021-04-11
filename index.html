@@ -10,9 +10,13 @@
     <title>Meet The Team - Tour De Four Consulting</title>
 
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="/css/colors.css">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/header.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Krub">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 
     <!-- JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
@@ -24,14 +28,16 @@
   
   <body id="body" ng-app="myApp" ng-controller="myCtrl">
 
-    <header ng-include="'/header.html'">
-      
-    </header>
+    <!-- Global Header -->
+    <header ng-include="'/header.html'"> </header>
 
-    <main id="content">
-      <!-- Content for View -->
-      <ng-include src="viewSrc"></ng-include>
-    </main>
+    <!-- Floating Background -->
+    <img class="floating-bg"/>
+
+    <!-- Page Content -->
+    <main ng-include="viewSrc"> </main>
+
+    <!-- Footer -->
     <footer></footer>
   </body>
 </html>
