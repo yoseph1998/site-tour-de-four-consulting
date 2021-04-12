@@ -1,4 +1,5 @@
 header {
+    --nav-height: 60px;
     --nav-height: 80px;
     --nav-height-expanded: 120px;
     --nav-background: #840909d1;
@@ -52,6 +53,10 @@ header .sticky-nav a {
     font-weight: 600;
 }
 
+header .sticky-nav a.hamburger {
+    display: none;
+}
+
 header .sticky-nav a:hover {
     filter: var(--nav-item-filter-hover);
 }
@@ -73,8 +78,43 @@ header .sticky-nav a img {
     object-fit: contain;
 }
 
-@media (max-width: 1000px) {
-
+@media (max-width: 800px) {
+    header .sticky-nav-container {
+        overflow: hidden;
+        height: 70px !important;
+    }
+    header .sticky-nav-container.expand {
+        height: 670px !important;
+    }
+    header .sticky-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    header .sticky-nav a {
+        flex-direction: row;
+        padding-left: 25px;
+        visibility: hidden;
+    }
+    header .sticky-nav a.hamburger {
+        display: flex;
+        visibility: visible;
+    }
+    header .sticky-nav-container.expand a {
+        visibility: visible;
+    }
+    header .sticky-nav a img {
+        min-width: 10px;
+        min-height: 10px;
+        width: 25px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    header .sticky-nav-container .sticky-nav a span { 
+        visibility: visible;
+        padding-left: 30px;
+    }
 }
 
 /*****************/

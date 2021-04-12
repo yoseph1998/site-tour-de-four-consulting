@@ -1,3 +1,8 @@
+function toggleNav() {
+    var element = document.getElementById("sticky-nav-container");
+    element.classList.toggle("expand")
+}
+
 function getCurrentView() {
     let qsArr = window.location.href.split('#');
 
@@ -6,7 +11,6 @@ function getCurrentView() {
     }
     return "project-overview.html";
 }
-console.log(getCurrentView());
 
 var app = angular.module('myApp', ['ngAnimate']);
 
