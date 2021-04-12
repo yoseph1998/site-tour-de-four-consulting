@@ -138,6 +138,15 @@ main .template-wrapper section img.ball2 {
 main .template-wrapper section img.full-span {
     width: 100%;
 }
+
+/* Video */
+main .template-wrapper section iframe {
+    width: 90vw;
+    height: calc(90vw * 315 / 560 );
+    max-width: calc(1.5 * 560px);
+    max-height: calc(1.5 * 315px);
+}
+
 /* Tables */
 main .template-wrapper section table {
     margin: 0 auto;
