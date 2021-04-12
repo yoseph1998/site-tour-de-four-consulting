@@ -135,5 +135,10 @@ header .sticky-return img {
     height: 40px;
     width: 100%;
     height: 100%;
-    
+}
+
+@media (max-width: 700px) {
+    header .sticky-return {
+        display: none;
+    }
 }

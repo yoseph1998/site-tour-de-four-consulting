@@ -1,6 +1,10 @@
-function toggleNav() {
-    var element = document.getElementById("sticky-nav-container");
-    element.classList.toggle("expand")
+function closeNav(id) {
+    var element = document.getElementById(id);
+    element.classList.remove("expand");
+}
+function toggleNav(id) {
+    var element = document.getElementById(id);
+    element.classList.toggle("expand");
 }
 
 function getCurrentView() {
