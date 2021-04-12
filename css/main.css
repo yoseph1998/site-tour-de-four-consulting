@@ -22,45 +22,120 @@ main {
     color: #3a3a3a;
     font-family: 'Montserrat', serif;
     height: 100%;
-    min-height: calc(100vh - var(--nav-height-expanded));
     width: 100%;
 }
 
 main .floating-bg {
-    position: absolute;
+    position: fixed;
     top: 0;
     height: 100%;
     width: 100%;
     opacity: 0.05;
     z-index: -1;
-    background-size: cover;
+    object-fit: cover;
 }
 
+main .floating-bg.darker {
+    opacity: 0.1;
+}
+
+/* Section wrapper*/
 main .template-wrapper section {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: flex-start;
     width: 100%;
-    height: 400px;
+    min-height: 350px;
+    margin: 15px 0;
+    padding: 10px 0;
+}
+
+main .template-wrapper section.short {
+    min-height: 150px;
+}
+
+main .template-wrapper section.shadow {
+    background-color: #c4c4c442;
 }
 
 main .template-wrapper section.reverse {
     flex-direction: row-reverse;
 }
 
+@media (min-width: 1500px) {
+    main .template-wrapper section {
+        padding: 15px calc((100% - 1500px) / 2);
+    }
+}
+
+/* Text */
 main .template-wrapper section text {
     width: 50%;
     padding: 2em;
+}
+
+main .template-wrapper section text.valign {
     margin: auto 0;
 }
 
+main .template-wrapper section text.alone {
+    width: calc(100% - 10px);
+    margin: auto;
+    text-align: center;
+}
+
+/* Heading */
 main .template-wrapper section text h1,
 main .template-wrapper section text h2,
 main .template-wrapper section text h3 {
     color: #945252
 }
+
+/* Image */
 main .template-wrapper section img {
     margin: auto;
     width: 40%;
+}
+
+main .template-wrapper section img.round {
+    border-radius: 400px 0 0 400px;
+    margin-right: 0;
+    height: 100%;
+    width: auto;
+    min-height: 250px;
+    align-self: flex-end;
+}
+
+main .template-wrapper section.reverse img.round {
+    border-radius: 0 400px 400px 0;
+    margin-left: 0;
+    height: 100%;
+    align-self: flex-start;
+}
+
+main .template-wrapper section img.ball {
+    border-radius: 400px;
+    width: 20%;
+    object-fit: cover;
+}
+
+main .template-wrapper section img.full-span {
+    width: 100%;
+}
+/* Tables */
+main .template-wrapper section table {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+main .template-wrapper section table tr th,
+main .template-wrapper section table tr td {
+    border: none;
+    padding: 5px 20px;
+}
+
+main .template-wrapper section table tr:nth-child(even) {
+    background-color: #c4c4c442;
 }
