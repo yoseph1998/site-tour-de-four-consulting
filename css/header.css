@@ -1,6 +1,6 @@
 header {
     --nav-height: 80px;
-    --nav-height-expanded: 120px;
+    --nav-height-expanded: 110px;
     --nav-background: #711717eb;
     --nav-item-filter: invert(93%) sepia(35%) saturate(801%) hue-rotate(292deg) brightness(103%) contrast(101%); 
     --nav-item-filter-hover: invert(81%) sepia(12%) saturate(719%) hue-rotate(204deg) brightness(93%) contrast(91%);;
@@ -46,7 +46,7 @@ header .sticky-nav a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     font-family: 'Krub', serif;
     font-weight: 600;
 }

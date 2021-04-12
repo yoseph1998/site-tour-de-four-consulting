@@ -4,50 +4,63 @@
 
 html {
     scroll-behavior: smooth;
+    --nav-height-expanded: 10px;
 }
 
 body {
     position: relative;
     /*background-color: #2248d3; */
-}
-
-.floating-bg {
-    display: none;
-    position: absolute;
-    top: 0;
     width: 100%;
     height: 100%;
     min-height: 100vh;
-    object-fit: cover;
-    opacity: 0.6;
-    z-index: -1;
-    filter: invert(39%) sepia(54%) saturate(830%) hue-rotate(191deg) brightness(100%) contrast(97%);
-    background: url("/images/grid-transparent.png") repeat;
-    background-size: 600px;
 }
 
+/****************************/
+/* Template Styling */
+/****************************/
 main {
     color: #3a3a3a;
     font-family: 'Montserrat', serif;
+    height: 100%;
+    min-height: calc(100vh - var(--nav-height-expanded));
+    width: 100%;
 }
 
-/****************************/
-/* Project Overview Styling */
-/****************************/
+main .floating-bg {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.05;
+    z-index: -1;
+    background-size: cover;
+}
 
-main #project-overview section {
+main .template-wrapper section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
+    height: 400px;
 }
 
-main #project-overview section text {
+main .template-wrapper section.reverse {
+    flex-direction: row-reverse;
+}
+
+main .template-wrapper section text {
     width: 50%;
     padding: 2em;
+    margin: auto 0;
 }
 
-main #project-overview section img {
+main .template-wrapper section text h1,
+main .template-wrapper section text h2,
+main .template-wrapper section text h3 {
+    color: #945252
+}
+main .template-wrapper section img {
     margin: auto;
+    width: 40%;
 }
