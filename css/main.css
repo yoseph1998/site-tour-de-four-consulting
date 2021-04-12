@@ -67,6 +67,10 @@ main .template-wrapper section.reverse {
     main .template-wrapper section {
         padding: 15px calc((100% - 1500px) / 2);
     }
+
+    main .template-wrapper section.full-span {
+        padding: 15px 0;
+    }
 }
 
 /* Text */
@@ -98,6 +102,10 @@ main .template-wrapper section img {
     width: 40%;
 }
 
+main .template-wrapper section img.smaller {
+    width: 25%;
+}
+
 main .template-wrapper section img.round {
     border-radius: 400px 0 0 400px;
     margin-right: 0;
@@ -120,6 +128,13 @@ main .template-wrapper section img.ball {
     object-fit: cover;
 }
 
+
+main .template-wrapper section img.ball2 {
+    border-radius: 400px;
+    width: 30%;
+    object-fit: cover;
+}
+
 main .template-wrapper section img.full-span {
     width: 100%;
 }
@@ -138,4 +153,42 @@ main .template-wrapper section table tr td {
 
 main .template-wrapper section table tr:nth-child(even) {
     background-color: #c4c4c442;
+}
+
+/* Author */
+main .author {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    background-color:rgba(182, 75, 58, 0.322);
+    border-radius: 200px;
+    backdrop-filter: blur(3px);
+}
+
+main .author text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .author text h1,
+main .author text h2,
+main .author text h3,
+main .author text h4 {
+    margin: 0 10px;
+
+}
+
+
+
+main .author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 400px;
+    border: 1px solid var(--nav-background);
 }

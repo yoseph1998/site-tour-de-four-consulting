@@ -20,6 +20,10 @@ app.controller('myCtrl', function($scope) {
     }
     window.onhashchange = function() { 
         $scope.viewSrc = getCurrentView();
+        var element = document.getElementById('body');
+        if(element != null) {
+            element.scrollIntoView({ behavior: "smooth" });
+        }
     };
 });
 

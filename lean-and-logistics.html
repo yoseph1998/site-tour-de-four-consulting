@@ -1,1 +1,599 @@
-Lean and Logistics
+<div class="template-wrapper">
+    <section>
+        <text class="valign alone">
+            <h1>Logistics</h1>
+            <p>The logistics analysis performed by Tour de Four Consulting resulted in the following recommendations for Marathon Investments.  Incoming shipments of raw materials and purchased parts and outgoing shipments of the finished product are done by truck.  The shipping of incoming materials is assumed to be handled by the suppliers, therefore shipping costs are assumed to be included in the price of the materials.  Shipping cost is a variable in the economic order quantity (EOQ) equation.  As a result, the EOQ values calculated were found to be unreasonable.  Instead, order size and frequency were determined based on daily demand and a lead time of two days, resulting in shipments every two days.  This requires two receiving docks.  For outgoing shipments, the trucking will be contracted out.  Based on the daily production of 930 units and the size of the finished product storage area, a shipment schedule was devised to maximize the value of each shipment.  This requires one shipping dock.  The following tables detail these results.</p>
+            <br>
+            <h2>Raw Materials</h2>
+            <table width="551" cellpadding="1" cellspacing="0">
+                <colgroup>
+                    <col width="175"/>
+                    <col width="119"/>
+                    <col width="124"/>
+                    <col width="123"/>
+                </colgroup>
+                <tbody>
+                    <tr valign="top">
+                        <td width="175" height="18">
+                            <p align="center">
+                                Material
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="center">
+                                Daily demand
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="center">
+                                Order quantity
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="center">
+                                Safety stock
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="24">
+                            <p align="justify">
+                                ½” steel pipe
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                1400ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                2900ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                2800ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="23">
+                            <p align="justify">
+                                ¾” steel pipe
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                2140ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                4300ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                4280ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="20">
+                            <p align="justify">
+                                1” steel pipe (thick walled)
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                504ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                1015ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                1010ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="22">
+                            <p align="justify">
+                                1” steel pipe (thin walled)
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                400ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                820ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                800ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="20">
+                            <p align="justify">
+                                1.17” steel pipe
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                280ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                580ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                560ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="23">
+                            <p align="justify">
+                                1.25” steel pipe
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                2635ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                5335ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                5300ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="22">
+                            <p align="justify">
+                                1.5x2.3” steel pipe
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                1400ft
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                2810ft
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                2800ft
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="22">
+                            <p align="justify">
+                                Polypropylene
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                150lbs
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                300lbs
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                300lbs
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="175" height="19">
+                            <p align="justify">
+                                Paint
+                            </p>
+                        </td>
+                        <td width="119">
+                            <p align="right">
+                                930lbs
+                            </p>
+                        </td>
+                        <td width="124">
+                            <p align="right">
+                                2000lbs
+                            </p>
+                        </td>
+                        <td width="123">
+                            <p align="right">
+                                1860lbs
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+    </section>
+    <section>
+        <text class="valign alone">
+            <h2>Purchased Parts</h2>
+            <table width="496" cellpadding="1" cellspacing="0">
+                <colgroup>
+                    <col width="126"/>
+                    <col width="122"/>
+                    <col width="122"/>
+                    <col width="116"/>
+                </colgroup>
+                <tbody>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="center">
+                                Part
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="center">
+                                Daily demand
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="center">
+                                Order quantity
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="center">
+                                Safety stock
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Handlebar grips
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                3800
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                3720
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Wheel assembly
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                3800
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                3720
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Saddle
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Quick release latch
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                3800
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                3720
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Small washer
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Large washer
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Footrest washer
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Footrest rivet
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Race
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="126">
+                            <p align="justify">
+                                Allen wrench
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                930
+                            </p>
+                        </td>
+                        <td width="122">
+                            <p align="right">
+                                2000
+                            </p>
+                        </td>
+                        <td width="116">
+                            <p align="right">
+                                1860
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+    </section>
+    <section>
+        <text class="valign alone">
+            <h2>Finished Product Shipping Schedule</h2>
+            <table width="414" cellpadding="1" cellspacing="0">
+                <colgroup>
+                    <col width="204"/>
+                    <col width="204"/>
+                </colgroup>
+                <tbody>
+                    <tr valign="top">
+                        <td width="204">
+                            <p align="center">
+                                Day
+                            </p>
+                        </td>
+                        <td width="204">
+                            <p align="center">
+                                Quantity Shipped
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="204">
+                            <p align="justify">
+                                Monday
+                            </p>
+                        </td>
+                        <td width="204">
+                            <p align="right">
+                                0
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="204">
+                            <p align="justify">
+                                Tuesday
+                            </p>
+                        </td>
+                        <td width="204">
+                            <p align="right">
+                                1200
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="204">
+                            <p align="justify">
+                                Wednesday
+                            </p>
+                        </td>
+                        <td width="204">
+                            <p align="right">
+                                1200
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="204">
+                            <p align="justify">
+                                Thursday
+                            </p>
+                        </td>
+                        <td width="204">
+                            <p align="right">
+                                1200
+                            </p>
+                        </td>
+                    </tr>
+                    <tr valign="top">
+                        <td width="204">
+                            <p align="justify">
+                                Friday
+                            </p>
+                        </td>
+                        <td width="204">
+                            <p align="right">
+                                1050
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </text>
+    </section>
+    <section>
+        <text class="valign alone">
+            <h1>Lean</h1>
+            <p>Tour de Four recommends that Marathon Investments use lean principles during production in order to reduce waste.  The recommendations are intended to save time and money during production, as well as improve quality.  The first recommendation is Six Sigma training.  Six Sigma is a lean method that uses statistical tools such as control charts to drive process improvement.  It is recommended that select employees receive this training so that they can continue to improve their areas.  The next recommended lean method is called 5S: sort, set in order, shine, standardize, and sustain.  This method improves cleanliness and organization in all aspects of production.  Practicing 5S includes clearly marking needed items, placing these items in a set spot, thoroughly cleaning, and continuously repeating these practices.  All employees should receive this training.</p>
+        </text>
+    </section>
+
+    <div class="author">
+        <img src="/images/meet-the-team/bio-tanner-cropped.png"/>
+        <text>
+            <h3>Tanner Boyd</h3>
+            <h4>Lean & Logistics Analyst</h4>
+        </text>
+    </div>
+
+</div>
+<!-- Floating Background -->
+<img class="floating-bg darker" src="/images/lean-logistics/wireframe-logistics.jpg" />
