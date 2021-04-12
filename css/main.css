@@ -254,7 +254,7 @@ main .author img {
         transition: 0.3s ease;
     }
 
-    main .author:hover {
+    main .author.expand {
         max-width: 100%;
         padding: 8px;
         overflow: hidden;

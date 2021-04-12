@@ -1,8 +1,8 @@
-function closeNav(id) {
+function closeDiv(id) {
     var element = document.getElementById(id);
     element.classList.remove("expand");
 }
-function toggleNav(id) {
+function toggleDiv(id) {
     var element = document.getElementById(id);
     element.classList.toggle("expand");
 }
