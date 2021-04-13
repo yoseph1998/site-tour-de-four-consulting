@@ -1,19 +1,28 @@
 function closeDiv(id) {
-    var element = document.getElementById(id);
-    element.classList.remove("expand");
+    document.getElementById(id).classList.remove("expand");
 }
 function toggleDiv(id) {
-    var element = document.getElementById(id);
-    element.classList.toggle("expand");
+    document.getElementById(id).classList.toggle("expand");
 }
-
 function getCurrentView() {
     let qsArr = window.location.href.split('#');
+    var currentView = "";
 
-    if(qsArr.length >= 2 ) {
-        return qsArr[qsArr.length-1];
+    // Get Current View
+    if(qsArr.length >= 2 )
+        currentView = qsArr[qsArr.length-1];
+    else
+        currentView = "project-overview.html";
+    //Update Nav Selected
+    var elements = document.getElementsByClassName('nav-item');
+    for(i = 0; i < elements.length; i++) {
+        if(elements[i].href.includes(currentView))
+            elements[i].classList.add("selected");
+        else
+            elements[i].classList.remove('selected');
     }
-    return "project-overview.html";
+
+    return currentView;
 }
 
 var app = angular.module('myApp', ['ngAnimate']);
@@ -35,3 +44,6 @@ app.controller('myCtrl', function($scope) {
     };
 });
 
+window.addEventListener('load', function() {
+    getCurrentView();
+});

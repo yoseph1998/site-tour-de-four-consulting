@@ -222,7 +222,7 @@ main .author {
     padding: 10px;
     background-color:rgba(182, 75, 58, 0.322);
     border-radius: 200px;
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(8px);
 }
 
 main .author text {

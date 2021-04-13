@@ -59,7 +59,8 @@ header .sticky-nav a.hamburger {
     display: none;
 }
 
-header .sticky-nav a:hover {
+header .sticky-nav a:hover,
+header .sticky-nav a.selected {
     filter: var(--nav-item-filter-hover);
 }
 
